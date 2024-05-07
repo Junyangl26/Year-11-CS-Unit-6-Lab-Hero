@@ -7,12 +7,15 @@ public class Hero {
         name = a;
     }
     public String getName () {
+
         return name;
     }
     public int getHitPoints (){
+
         return hitPoints;
     }
     public String toString () {
+
         return "Hero{name=" + "'" + name + "', " + "hitPoints=" + hitPoints+"}";
     }
     public void attack (Hero opponent) {
@@ -65,7 +68,7 @@ public class Hero {
         return "Andrew Tate: " + out[0] +" wins\n" + "Taylor Swift: " + out[1] + "wins\n" + output;
     }
     public void dramaticFightToTheDeath (Hero opponent) throws InterruptedException {
-        System.out.println("Andrew Tate: " + hitPoints +"\t" + "Taylor Swift: " + opponent.hitPoints);
+        System.out.println("Andrew Tate: " + hitPoints +"\n" + "Taylor Swift: " + opponent.hitPoints);
         Thread.sleep(1000);
     }
 }
